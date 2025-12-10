@@ -1,24 +1,6 @@
-// ISEF Symbolic Risk Game — Enhanced Version
-// Single-file React + TypeScript app for demo booths (Vite + React + Tailwind recommended)
-// -----------------------------------------------------------------------------
-// WHAT THIS FILE CONTAINS (mind-blowingly upgraded):
-// 1) A modular React app (single-file for canvas preview) with components: App, NetworkGenerator, Visualizer, Solver,
-//    PuzzleCampaign, GuidedDemo, Inspector, Exporter, Leaderboard mock, and Accessibility helpers.
-// 2) A deterministic symbolic solver matching your paper's rules, optimized and explained in UI.
-// 3) A procedural puzzle campaign with 6 curated challenges of increasing difficulty, plus an auto-hint system
-//    that explains why a node is critical (shows unpaid incoming, buffer comparisons, and substructures).
-// 4) Guided demo mode: a scripted tour that auto-runs scenarios, highlights nodes/subgraphs, and overlays explanatory
-//    annotations — great for booth talks.
-// 5) Save/load scenarios, downloadable PDF challenge pack generator, and exportable JSON graphs.
-// 6) Lightweight animations using CSS + Framer Motion hooks (optional; graceful fallback if not installed).
-// 7) Accessibility: keyboard controls to select nodes, ARIA labels, and high-contrast color toggle.
-// 8) README and deploy tips included at the bottom for booth-ready packaging.
-// -----------------------------------------------------------------------------
+
 
 import React, { useEffect, useMemo, useState } from 'react';
-
-// NOTE: This file is intentionally a single bundled example for quick testing.
-// For production split into files under src/components/*. Use Tailwind for styling or swap classes for plain CSS.
 
 // --------------------------- Types ---------------------------
 type NodeId = number;
